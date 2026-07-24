@@ -25,20 +25,24 @@
             background-color: #ffffff;
         }
 
-        /* Seção Principal (Hero Banner) */
+       /* Seção Principal (Hero Banner) - ATUALIZADA */
         .hero {
             position: relative;
             flex: 1;
             width: 100%;
-            background-image: url('fundo.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            /* Ajuste na referência da imagem para garantir o caminho relativo */
+            background-image: url('./fundo.jpg');
+            background-size: cover; /* Faz a imagem cobrir toda a área */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Não repete a imagem */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding: 40px 60px;
             color: #ffffff;
+            
+            /* Garanter que o fundo não afete o layout */
+            z-index: 1; 
         }
 
         /* Topo com a Logo */
